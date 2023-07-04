@@ -24,6 +24,7 @@
     "@babel/preset-env": "^7.22.6",
     "babel-loader": "^9.1.2",
     "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
     "css-minimizer-webpack-plugin": "^5.0.1",
     "eslint": "^8.44.0",
     "eslint-config-node": "^4.1.0",
