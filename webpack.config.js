@@ -39,7 +39,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Devjobs-web-app',
       template: './src/template.html',
-      favicon: './src/assets/favicon/favicon.ico',
+      // favicon: './src/assets/favicon/favicon.ico',
       filename: './index.html',
     }),
     new CopyPlugin({
