@@ -43,7 +43,7 @@ module.exports = {
       filename: './index.html',
     }),
     new CopyPlugin({
-      patterns: [{ from: 'src/assets', to: 'assets' }],
+      patterns: [{ from: 'src/assets', to: 'dist/assets' }],
     }),
   ],
   optimization: {
