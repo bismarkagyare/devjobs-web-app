@@ -2,29 +2,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap');
 
 :root {
-  $color-violet: #5964e0;
-  $color-light-violet: #939bf4;
-  $color-very-dark-blue: #19202d;
-  $color-midnight: #121721;
-  $color-white: #fff;
-  $color-light-grey: #f4f6f8;
-  $color-grey: #9daec2;
-  $color-dark-grey: #6e8098;
-  $font-size-h1: 2.8rem;
-  $line-height-h1: 3.4rem;
-  $font-size-h2: 2.4rem;
-  $line-height-h2: 2.9rem;
-  $font-size-h3: 2rem;
-  $line-height-h3: 2.4rem;
-  $font-size-h4: 1.4rem;
-  $line-height-h4: 1.8rem;
-  $font-size-body: 1.6rem;
-  $line-height-body: 2.6rem;
-  $border-radius-xxs: 0.3rem;
-  $border-radius-xs: 0.5rem;
-  $border-radius-s: 0.6rem;
-  $border-radius-m: 1.2rem;
-  $border-radius-l: 1.5rem;
+  --color-violet: #5964e0;
+  --color-light-violet: #939bf4;
+  --color-very-dark-blue: #19202d;
+  --color-midnight: #121721;
+  --color-white: #fff;
+  --color-light-grey: #f4f6f8;
+  --color-grey: #9daec2;
+  --color-dark-grey: #6e8098;
+  --font-size-h1: 2.8rem;
+  --line-height-h1: 3.4rem;
+  --font-size-h2: 2.4rem;
+  --line-height-h2: 2.9rem;
+  --font-size-h3: 2rem;
+  --line-height-h3: 2.4rem;
+  --font-size-h4: 1.4rem;
+  --line-height-h4: 1.8rem;
+  --font-size-body: 1.6rem;
+  --line-height-body: 2.6rem;
+  --border-radius-xxs: 0.3rem;
+  --border-radius-xs: 0.5rem;
+  --border-radius-s: 0.6rem;
+  --border-radius-m: 1.2rem;
+  --border-radius-l: 1.5rem;
 }
 
 *,
@@ -33,4 +33,30 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  color: var(--color-dark-grey);
+}
+
+#container {
+  min-height: 100vh;
+  overflow: auto;
+  transition: 0.2s linear;
+  background: var(--color-light-grey);
+}
+
+.header-svg {
+  background-image: url('../assets/desktop/bg-pattern-header.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 16rem;
+  border-radius: 0 0 0 var(--border-radius-xl);
 }
