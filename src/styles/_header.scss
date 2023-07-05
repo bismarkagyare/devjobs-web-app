@@ -1,0 +1,60 @@
+.header-svg {
+  background-image: url('../assets/desktop/bg-pattern-header.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 16rem;
+  border-radius: 0 0 0 var(--border-radius-xl);
+}
+
+header,
+main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: var(--padding-layout);
+}
+
+header {
+  justify-content: space-between;
+  height: 12.2rem;
+  outline: 1px solid rgb(153, 207, 231) !important;
+}
+
+.theme-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.theme-toggle-btn {
+  width: 4.8rem;
+  height: 2.4rem;
+  border-radius: var(--border-radius-m);
+  position: relative;
+  transition: 0.2s linear;
+  background: var(--color-white);
+}
+
+.theme-toggle-btn::before {
+  content: '';
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 100%;
+  background: var(--color-violet);
+  transition: 0.2s linear;
+  position: absolute;
+  top: 20%;
+  left: 0.5rem;
+}
+
+header button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
