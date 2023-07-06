@@ -16,6 +16,51 @@
           <img src="./assets/desktop/icon-moon.svg" alt="dark-mode icon" />
         </div>
       </header>
+
+      <main>
+        <form class="search-bar-form">
+          <section class="search-bar">
+            <label for="fitlerByInfos" class="search-label">
+              <img src="./assets/desktop/icon-search.svg" alt="" />
+              <input type="text" class="title-input" id="filterByInfos" value placeholder="Filter by title" />
+            </label>
+            <label for="filterByLocation" class="search-label">
+              <img src="./assets/desktop/icon-location.svg" alt="" />
+              <input type="text" class="title-input" id="filterByLocation" value placeholder="Filter by location" />
+            </label>
+            <label for="filterByFullTime" class="full-time-label">
+              <input type="checkbox" id="filterByFullTime" class="input-checkbox" checked />
+              <span class="checkbox-span"></span>
+              full time
+            </label>
+            <button class="search-btn btn-primary">search</button>
+            <button class="filter-mobile btn-secondary">
+              <img src="./assets/mobile/icon-filter.svg" alt="icon-filter" />
+            </button>
+            <button class="search-mobile btn-secondary">
+              <img src="./assets/desktop/icon-search.svg" alt="icon-search" />
+            </button>
+          </section>
+        </form>
+
+        <section class="job-list">
+          <article class="job-card">
+            <div class="company-logo company-logo-small" style="background-color: rgb(234, 147, 16)">
+              <img src="./assets/logos/scoot.svg" alt="" />
+            </div>
+            <div class="job-info">
+              <p>5h ago</p>
+              <span class="job-info-divider"></span>
+              <p>Full Time</p>
+            </div>
+            <a href="">
+              <h3 class="job-position">senior software enginner</h3>
+            </a>
+            <p>Scoot</p>
+            <h4 class="job-location">united kingdom</h4>
+          </article>
+        </section>
+      </main>
     </div>
   </body>
 </html>
