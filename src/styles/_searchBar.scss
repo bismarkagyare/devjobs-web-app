@@ -128,4 +128,10 @@ input {
   transition: 0.2s linear;
   width: 8rem;
   cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.search-btn:hover {
+  opacity: 0.8;
 }
