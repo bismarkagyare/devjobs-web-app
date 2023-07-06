@@ -1,3 +1,4 @@
 import './styles/style.scss';
+import { fetchAndRenderJobListings } from './modules/jobListings';
 
-console.log('hello world!');
+window.addEventListener('DOMContentLoaded', fetchAndRenderJobListings);
