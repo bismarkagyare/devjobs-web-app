@@ -9,7 +9,7 @@
 .job-card {
   transform: none;
   opacity: 1;
-  padding: 1rem 2.2rem 3.2rem;
+  padding: 1rem 1.8rem 3.2rem;
   position: relative;
 }
 
@@ -67,12 +67,18 @@
 .job-position {
   font-size: var(--font-size-input);
   color: var(--color-very-dark-blue);
+  line-height: var(--line-height);
+  opacity: 1;
+  transition: color 0.3s ease;
+}
+
+.job-position:hover {
+  color: var(--color-dark-grey);
 }
 
 .job-location {
   padding-top: 2rem;
   font-size: var(--font-size-input);
-  line-height: var(--line-height-h4);
   color: var(--color-violet);
   text-transform: capitalize;
 }
