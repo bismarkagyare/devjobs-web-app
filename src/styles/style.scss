@@ -121,6 +121,10 @@ body {
   background-color: var(--bg-btn-hover);
 }
 
+.apply-btn:hover {
+  opacity: 0.99;
+}
+
 //job description
 
 .job-description {
@@ -216,4 +220,29 @@ a .apply-btn {
 .job-role-number {
   color: var(--color-violet);
   font-weight: 700;
+}
+
+footer {
+  width: 100%;
+  background-color: var(--color-white);
+  padding: 0 18%;
+  transition: 0.2s linear;
+}
+
+.job-banner {
+  width: min(80rem, 100%);
+  box-sizing: content-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.6rem 0;
+}
+
+.job-banner-desc h3 {
+  color: var(--color-very-dark-blue);
+  font-size: var(--font-size-body);
+  text-transform: capitalize;
+}
+
+.job-banner-desc p {
+  text-transform: capitalize;
 }
