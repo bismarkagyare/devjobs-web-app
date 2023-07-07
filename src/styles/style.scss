@@ -90,7 +90,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
-  padding: 1.5rem;
+  padding: 2rem 3.1rem;
 }
 
 .company-header-info h2 {
@@ -109,13 +109,58 @@ body {
   font-weight: 700;
   border-radius: var(--border-radius-xs);
   text-transform: capitalize;
-  padding: 0.7rem;
+  padding: 0.4rem;
   transition: 0.2s linear;
   color: var(--color-violet);
   background-color: var(--bg-btn);
   cursor: pointer;
+  width: 10rem;
 }
 
 .company-header-btn:hover {
   background-color: var(--bg-btn-hover);
+}
+
+//job description
+
+.job-description {
+  width: min(50rem, 100%);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-s);
+  padding: 3rem;
+  margin-top: 3rem;
+  gap: 4rem;
+  transition: 0.2s linear;
+}
+
+.job-description-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-time p {
+  font-size: 1.25rem;
+}
+
+.job-desc-position {
+  padding: 0.5rem 0;
+  color: var(--color-very-dark-blue);
+  font-size: 1.8rem;
+  transition: 0.2s linear;
+  text-transform: capitalize;
+}
+
+.job-description-details h4 {
+  font-size: var(--font-size-input);
+  color: var(--color-violet);
+  text-transform: capitalize;
+  line-height: var(--line-height-h4);
+}
+
+a .apply-btn {
+  color: var(--color-white);
+  background-color: var(--color-violet);
 }
