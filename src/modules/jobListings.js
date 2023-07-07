@@ -1,10 +1,22 @@
-export async function fetchAndRenderJobListings() {
+export async function fetchAndRenderJobListings(searchParams = {}) {
   try {
     const response = await fetch('./data.json');
     const data = await response.json();
 
+    // Apply search filters
+    const filteredData = data.filter((item) => {
+      const titleMatch = searchParams.title
+        ? item.position.toLowerCase().includes(searchParams.title.toLowerCase())
+        : true;
+      const locationMatch = searchParams.location
+        ? item.location.toLowerCase().includes(searchParams.location.toLowerCase())
+        : true;
+      const fullTimeMatch = searchParams.fullTime ? item.contract === 'Full Time' : true;
+      return titleMatch && locationMatch && fullTimeMatch;
+    });
+
     const jobListingsContainer = document.querySelector('.job-list');
-    const displayJobs = data.map((item) => {
+    const displayJobs = filteredData.map((item) => {
       return `
         <article class="job-card">
           <div class="company-logo company-logo-small" style="background-color: ${item.logoBackground}">
