@@ -31,6 +31,8 @@
   --border-radius-s: 0.6rem;
   --border-radius-m: 1.2rem;
   --border-radius-l: 1.5rem;
+  --bg-btn: #eeeffc;
+  --bg-btn-hover: #c5c9f4;
   --padding-layout: 0 10%;
   --padding-search-bar: 1rem;
 }
@@ -61,4 +63,59 @@ body {
 .filter-mobile,
 .search-mobile {
   display: none;
+}
+
+//other job info styles
+
+.company-header {
+  width: min(50rem, 100%);
+  display: flex;
+  border-radius: var(--border-radius-s);
+  background-color: var(--color-white);
+  overflow: hidden;
+  transition: 0.2s linear;
+  margin-top: 2rem;
+}
+
+.company-logo-big {
+  width: 8rem;
+}
+
+.company-logo-big img {
+  width: 58%;
+}
+
+.company-header-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  padding: 1.5rem;
+}
+
+.company-header-info h2 {
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-h2);
+  color: var(--color-very-dark-blue);
+  transition: 0.2s linear;
+}
+
+.company-header-info p {
+  font-size: var(--font-size-input);
+}
+
+.company-header-btn {
+  font-size: var(--font-size-input);
+  font-weight: 700;
+  border-radius: var(--border-radius-xs);
+  text-transform: capitalize;
+  padding: 0.7rem;
+  transition: 0.2s linear;
+  color: var(--color-violet);
+  background-color: var(--bg-btn);
+  cursor: pointer;
+}
+
+.company-header-btn:hover {
+  background-color: var(--bg-btn-hover);
 }
