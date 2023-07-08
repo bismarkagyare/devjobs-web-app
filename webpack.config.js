@@ -42,6 +42,11 @@ module.exports = {
       // favicon: './src/assets/favicon/favicon.ico',
       filename: './index.html',
     }),
+    new HtmlWebpackPlugin({
+      title: 'Devjobs-web-app',
+      template: './src/details.html',
+      filename: './details.html',
+    }),
     new CopyPlugin({
       patterns: [
         { from: 'src/assets', to: 'assets' },
