@@ -27,7 +27,7 @@ export async function fetchAndRenderJobListings(searchParams = {}) {
             <span class="job-info-divider"></span>
             <p>${item.contract}</p>
           </div>
-          <a href="">
+          <a href="details.html?id=${item.id}" class="job-details">
             <h3 class="job-position">${item.position}</h3>
           </a>
           <p>${item.company}</p>
