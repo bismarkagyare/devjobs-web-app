@@ -15,7 +15,7 @@ main {
 .search-bar-form {
   width: 100%;
   position: relative;
-  display: block;
+  display: flex;
 }
 
 .search-bar {
@@ -35,7 +35,7 @@ main {
   align-items: center;
   gap: 1rem;
   padding: var(--padding-search-bar);
-  min-width: 20rem;
+  min-width: 10rem;
   font-size: 1.2rem;
 }
 
@@ -146,13 +146,4 @@ input {
   color: var(--color-violet);
   width: auto;
   background-color: transparent;
-}
-
-.filter-mobile {
-  color: var(--color-violet);
-}
-
-.search-mobile {
-  color: var(--color-white);
-  background-color: var(--color-violet);
 }
