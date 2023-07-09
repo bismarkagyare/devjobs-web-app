@@ -3,6 +3,7 @@
 @import url(_searchBar.scss);
 @import url(_joblist.scss);
 @import url(_jobDetails.scss);
+@import url(_mediaQueries.scss);
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap');
 
 :root {
@@ -116,72 +117,4 @@ body {
   left: 0;
   z-index: 2;
   display: none;
-}
-
-// media queries
-@media screen and (max-width: 1200px) {
-  :root {
-    --padding-layout: 0 5%;
-    --padding-search-bar-items: 2rem;
-  }
-
-  .job-list {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.3rem;
-  }
-
-  .search-bar {
-    flex-shrink: 1;
-  }
-
-  footer {
-    padding: 0 10%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .search-label {
-    padding: 0;
-    min-width: 10rem;
-  }
-
-  .search-bar > label:first-child img,
-  .search-bar > label:first-child:after {
-    display: none;
-  }
-
-  .search-bar {
-    padding: 1rem;
-  }
-
-  .hide-on-mobile {
-    display: none;
-  }
-
-  .filter-mobile,
-  .search-mobile {
-    display: block;
-    width: auto;
-  }
-
-  .btn-sec {
-    padding: 0.8rem;
-    background-color: var(--color-violet);
-    border-radius: 0.5rem;
-    cursor: pointer;
-    font-size: 0.1rem;
-  }
-
-  .btn-tetiary {
-    padding: 0.8rem;
-    cursor: pointer;
-  }
-
-  .white-svg {
-    filter: invert(100);
-  }
-
-  .job-list {
-    grid-template-columns: 1fr;
-  }
 }
