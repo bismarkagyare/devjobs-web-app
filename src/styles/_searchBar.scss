@@ -39,8 +39,12 @@ main {
   font-size: 1.2rem;
 }
 
-.search-label[for='filterByInfos'] {
+.search-label[for='filterByTitle'] {
   flex-grow: 3;
+}
+
+.search-label[for='filterByLocation'] {
+  flex-grow: 1;
 }
 
 .search-label::after {
