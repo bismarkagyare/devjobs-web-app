@@ -39,6 +39,16 @@
   --padding-search-bar: 1rem;
 }
 
+.dark-theme {
+  --color-light-grey: #121721;
+  --color-white: #19202d;
+  --color-very-dark-blue: #fff;
+  --color-checkbox: #313743;
+  --bg-btn: #303642;
+  --bg-btn-hover: #696e76;
+  // --color-violet: #fff;
+}
+
 *,
 ::after,
 ::before {
