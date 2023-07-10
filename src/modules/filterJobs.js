@@ -60,3 +60,12 @@ export function setupFilterButton() {
     }
   });
 }
+
+export function setupThemeToggle() {
+  const container = document.getElementById('container');
+  const themeToggleBtn = document.querySelector('.theme-toggle-btn');
+
+  themeToggleBtn.addEventListener('click', () => {
+    container.classList.toggle('dark-theme');
+  });
+}
