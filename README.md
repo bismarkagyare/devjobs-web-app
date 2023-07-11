@@ -23,3 +23,4 @@ This web application is the solution to the final project as part of the AmaliTe
 
 - ESlint![Alt Text](./readme-asset/eslint.svg)
 - Prettier![Alt Text](./readme-asset/prettier.svg)
+  ![Alt Text](./readme-asset/webpack.svg)
