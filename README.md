@@ -14,13 +14,12 @@ This web application is the solution to the final project as part of the AmaliTe
 
 ## Built Using
 
-- HTML5![Alt Text](./readme-asset/html5.svg)
-- SASS![Alt Text](./readme-asset/sass.svg)
-- JavaScript![Alt Text](./readme-asset/javascript.svg)
-- Webpack![Alt Text](./readme-asset/webpack.svg)
+- HTML5 ![Alt Text](./readme-asset/html5.svg)
+- SASS ![Alt Text](./readme-asset/sass.svg)
+- JavaScript ![Alt Text](./readme-asset/javascript.svg)
+- Webpack ![Alt Text](./readme-asset/webpack.svg)
 
 ### Other tools used
 
-- ESlint![Alt Text](./readme-asset/eslint.svg)
-- Prettier![Alt Text](./readme-asset/prettier.svg)
-  ![Alt Text](./readme-asset/webpack.svg)
+- ESlint ![Alt Text](./readme-asset/eslint.svg)
+- Prettier ![Alt Text](./readme-asset/prettier.svg)
