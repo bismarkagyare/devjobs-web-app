@@ -47,9 +47,11 @@ export function setupFilterButton() {
 
   filterButton.addEventListener('click', (e) => {
     e.preventDefault();
-    searchBarMoreInfo.style.display = searchBarMoreInfo.style.display === 'none' ? 'flex' : 'none';
+    const display = getComputedStyle(searchBarMoreInfo).display;
+    searchBarMoreInfo.style.display = display === 'none' ? 'flex' : 'none';
 
-    backdrop.style.display = backdrop.style.display === 'none' ? 'block' : 'none';
+    const backdropDisplay = getComputedStyle(backdrop).display;
+    backdrop.style.display = backdropDisplay === 'none' ? 'block' : 'none';
   });
 
   window.addEventListener('click', (e) => {
