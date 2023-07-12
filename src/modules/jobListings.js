@@ -1,3 +1,5 @@
+import { renderJobDetails } from './jobDetails';
+
 export async function fetchAndRenderJobListings(searchParams = {}) {
   try {
     const response = await fetch('./data.json');
@@ -12,6 +14,7 @@ export async function fetchAndRenderJobListings(searchParams = {}) {
         ? item.location.toLowerCase().includes(searchParams.location.toLowerCase())
         : true;
       const fullTimeMatch = searchParams.fullTime ? item.contract === 'Full Time' : true;
+
       return titleMatch && locationMatch && fullTimeMatch;
     });
 
@@ -27,7 +30,7 @@ export async function fetchAndRenderJobListings(searchParams = {}) {
             <span class="job-info-divider"></span>
             <p>${item.contract}</p>
           </div>
-          <a href="details.html?id=${item.id}" class="job-details">
+          <a href="#" class="job-details" data-job-id="${item.id}">
             <h3 class="job-position">${item.position}</h3>
           </a>
           <p>${item.company}</p>
@@ -38,6 +41,17 @@ export async function fetchAndRenderJobListings(searchParams = {}) {
 
     const jobListingsHTML = displayJobs.join('');
     jobListingsContainer.innerHTML = jobListingsHTML;
+
+    // Event listener for job details
+    const jobDetailsLinks = document.querySelectorAll('.job-details');
+    jobDetailsLinks.forEach((link) => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const jobId = link.getAttribute('data-job-id');
+        const selectedJob = filteredData.find((job) => job.id === parseInt(jobId, 10));
+        renderJobDetails(selectedJob);
+      });
+    });
   } catch (error) {
     console.error('Error:', error);
   }
