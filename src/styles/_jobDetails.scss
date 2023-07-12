@@ -41,7 +41,7 @@
   text-transform: capitalize;
   padding: 0.4rem;
   transition: 0.2s linear;
-  color: var(--color-violet);
+  color: var(--bg-btn-clr);
   background-color: var(--bg-btn);
   cursor: pointer;
   width: 10rem;
@@ -52,7 +52,7 @@
 }
 
 .apply-btn:hover {
-  opacity: 0.99;
+  background-color: var(--color-light-violet);
 }
 
 .job-description {
@@ -93,7 +93,7 @@
 }
 
 a .apply-btn {
-  color: var(--color-white);
+  color: var(--bg-apply-btn);
   background-color: var(--color-violet);
 }
 

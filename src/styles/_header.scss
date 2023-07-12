@@ -59,6 +59,10 @@ header {
   left: 0.5rem;
 }
 
+#container.dark-theme .theme-toggle-btn::before {
+  transform: translateX(1.2rem);
+}
+
 header button {
   border: none;
   outline: none;
