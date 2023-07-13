@@ -23,3 +23,20 @@ This web application is the solution to the final project as part of the AmaliTe
 
 - ESlint ![Alt Text](./readme-asset/eslint.svg)
 - Prettier ![Alt Text](./readme-asset/prettier.svg)
+
+## Gallery
+
+### Desktop
+
+#### Light mode
+
+![Alt Text](./readme-asset/Screenshot1.png)
+
+#### Dark mode
+
+![Alt Text](./readme-asset/Screenshot2.png)
+
+#### Tablet / Mobile
+
+![Alt Text](./readme-asset/Screenshot3.png)
+![Alt Text](./readme-asset/Screenshot4.png)
