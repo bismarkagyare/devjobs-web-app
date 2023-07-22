@@ -3,7 +3,7 @@ export function renderJobDetails(job) {
   const mainContainer = document.querySelector('.main-container');
 
   // Add classes to show job details and hide main content
-  jobDetailsContainer.innerHTML = ''; // Clear existing content
+  jobDetailsContainer.innerHTML = '';
   jobDetailsContainer.classList.add('show-details');
   mainContainer.classList.add('hide-content');
 
